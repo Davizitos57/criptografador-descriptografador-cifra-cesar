@@ -2,8 +2,6 @@ module Descriptografia where
 
 descriptografar :: Int -> String -> String
 descriptografar deslocamento msg = map (deslocaChar deslocamento) msg
--- --> Alternativa mais simples e eficiente:
--- descriptografar msg deslocamento = criptografar msg (-deslocamento)
 
 deslocaChar :: Int -> Char -> Char
 deslocaChar i c
