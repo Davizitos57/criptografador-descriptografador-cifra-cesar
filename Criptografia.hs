@@ -1,7 +1,7 @@
 module Criptografia where    
 
-criptografar :: String -> Int -> String
-criptografar msg deslocamento = map (deslocaChar deslocamento) msg
+criptografar :: Int -> String -> String
+criptografar deslocamento msg = map (deslocaChar deslocamento) msg
 
 deslocaChar :: Int -> Char -> Char
 

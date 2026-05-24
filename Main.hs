@@ -1,4 +1,4 @@
-module TP.Main where
+module Main where
 
 import Criptografia
 import Descriptografia
@@ -23,11 +23,11 @@ main = do
     
     case opcao of
         "1" -> do
-            let resultado = criptografar mensagem deslocamento
+            let resultado = criptografar deslocamento mensagem
             putStrLn $ "\nMensagem Criptografada: " ++ resultado
             
         "2" -> do
-            let resultado = descriptografar mensagem deslocamento
+            let resultado = descriptografar deslocamento mensagem
             putStrLn $ "\nMensagem Descriptografada: " ++ resultado
             
         _ -> putStrLn "\nOpção inválida. Tente novamente."
